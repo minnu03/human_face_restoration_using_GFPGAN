@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text and Image Layout</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .container > div {
+      flex: 1 0 50%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .text-section {
+      text-align: justify;
+    }
+    .image-section {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center">My Awesome Page</h1>
+  <div class="container">
+    <div class="text-section">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna augue, fermentum vitae laoreet nec, accumsan nec quam. Donec at leo sed magna aliquam placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eu leo quam. Pellentesque lorem quam, vehicula vel risus ac, porta accumsan odio. Sed vel leo dui. Mauris eget quam euismod, semper magna nec, consectetur magna. Donec et diam lectus. Duis eu leo quam. Pellentesque lorem quam, vehicula vel risus ac, porta accumsan odio. Sed vel leo dui.</p>
+    </div>
+    <div class="image-section">
+      <img src="https://picsum.photos/id/237/500/300" alt="Nature Image">
+    </div>
+    <div class="image-section">
+      <img src="http://localhost:8000/comp1" alt="City Image">
+    </div>
+    <div class="text-section">
+      <p>Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque lorem quam, vehicula vel risus ac, porta accumsan odio. Sed vel leo dui. Mauris eget quam euismod, semper magna nec, consectetur magna. Donec et diam lectus. Duis eu leo quam. Pellentesque lorem quam, vehicula vel risus ac, porta accumsan odio. Sed vel leo dui.</p>
+    </div>
+  </div>
+</body>
+</html>
