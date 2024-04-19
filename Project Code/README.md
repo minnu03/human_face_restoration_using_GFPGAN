@@ -1,26 +1,3 @@
-
-<p align="center">
-  <img src="images/1287_src.jpg">
-
-<p align="center">
-  <img src="images/1287_tgt.jpg">
-
-- **对比二**
-
-<p align="center">
-  <img src="images/4155_src.jpg">
-
-<p align="center">
-  <img src="images/4155_tgt.jpg">
-
-- **对比三**
-
-<p align="center">
-  <img src="images/5863_src.jpg">
-
-<p align="center">
-  <img src="images/5863_tgt.jpg">
-
 ## Initial Requirements
 
 - Python >= 3.7
@@ -43,48 +20,39 @@
    conda install cudnn
    ```
 
-3. 克隆项目
+3. Clone Repository
 
    ```bash
    git clone https://github.com/minnu03/human_face_restoration_using_GFPGAN.git
    cd project_code
    ```
 
-4. 
+4. Install Requirements
 
    ```bash
-   pip install numpy
-   pip install torch==1.7.0
-   pip install torchvision==0.8.0
-   pip install basicsr
-   pip install facexlib
-   
    pip install -r requirements.txt
-   python setup.py develop
-   
-   pip install realesrgan
    ```
 
-## 下载预训练权重
+5. Refer readme.md in ex
+## Download pre-trained weights
 
-- 下载权重文件：[GFPGANv1.3.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)
+- [GFPGANv1.3.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)
 
-下载好模型后放到项目`experiments/pretrained_models`目录下
+Place it in `experiments/pretrained_models`目录下
 
-## 视频转换
+## Execution
 
-1. 在`video_rebuild`目录下，创建 src 目录；
-
-2. 把需要修复的视频文件放到`video_rebuild/src`目录下；
-
-3. 启动项目
-
-   运行命令格式如下：
+1. Host an http server
 
    ```bash
-   python video_rebuild/main.py --video ./video_rebuild/src/<待修复视频> --save-path ./video_rebuild/result/<输出的视频>
+   python -m http.server
    ```
+1. Run the webapp
 
+   ```bash
+   python -m http.server
+   ```
+   
    例如：
 
    ```bash
