@@ -33,39 +33,29 @@
    pip install -r requirements.txt
    ```
 
-5. Refer readme.md in ex
 ## Download pre-trained weights
 
 - [GFPGANv1.3.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)
+- [Pretrained StyleGAN2 model: StyleGAN2_512_Cmul1_FFHQ_B12G4_scratch_800k.pth](https://github.com/TencentARC/GFPGAN/releases/download/v0.1.0/StyleGAN2_512_Cmul1_FFHQ_B12G4_scratch_800k.pth)
+- [Component locations of FFHQ: FFHQ_eye_mouth_landmarks_512.pth](https://github.com/TencentARC/GFPGAN/releases/download/v0.1.0/FFHQ_eye_mouth_landmarks_512.pth)
+- [A simple ArcFace model: arcface_resnet18.pth](https://github.com/TencentARC/GFPGAN/releases/download/v0.1.0/arcface_resnet18.pth)
 
-Place it in `experiments/pretrained_models`目录下
+Place it in `experiments/pretrained_models` folder
 
 ## Execution
 
 1. Host an http server
 
    ```bash
-   python -m http.server
+   python -m http.server 8000
    ```
-1. Run the webapp
+2. Run the webapp
 
    ```bash
-   python -m http.server
+   streamlit run frontend.py
    ```
-   
-   例如：
 
+For debugging:
    ```bash
    python video_rebuild/main.py --video ./video_rebuild/src/demo04.mp4 --save-path ./video_rebuild/result/output.mp4
    ```
-
-   - 如果需要保存每一帧的图像，可以在命令最后加上`--save-frame`，但是会使输出结果太大，不建议保存每一帧；
-
-   - 输出的结果存储在项目`video_rebuild/result`目录下。
-
-
-"""
- python -m http.server 8000
- streamlit run fe.py
-"""
-
