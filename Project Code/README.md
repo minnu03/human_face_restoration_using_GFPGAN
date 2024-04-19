@@ -1,10 +1,3 @@
-# 视频超分辨率重建
-
-## 效果展示
-
-**分别为原视频、超分辨率视频的截图**
-
-- **对比一**
 
 <p align="center">
   <img src="images/1287_src.jpg">
@@ -28,25 +21,22 @@
 <p align="center">
   <img src="images/5863_tgt.jpg">
 
-## 项目基础环境
+## Initial Requirements
 
-- Python >= 3.7 ( 推荐使用 Anaconda 或 Docker )
+- Python >= 3.7
 - PyTorch >= 1.7
-- NVIDIA GPU + CUDA
-- Linux ( Windows 和 Mac 未测试过 )
+- NVIDIA GPU + CUDA (optional)
 
-## 项目依赖安装
+## Installation Guide
 
-- 这里基于 Anaconda 基础环境
 
-1. 创建虚拟环境
-
+1. Create Cuda Virtual Environment
    ```bash
    conda create -n video python=3.7
    conda activate video
    ```
 
-2. 安装cuda和cudnn
+2. Install Cuda (only for Nvidia)
 
    ```bash
    conda install cudatoolkit=10.2
@@ -56,11 +46,11 @@
 3. 克隆项目
 
    ```bash
-   git clone https://github.com/emptysoal/VideoRestore.git
-   cd VideoRestore
+   git clone https://github.com/minnu03/human_face_restoration_using_GFPGAN.git
+   cd project_code
    ```
 
-4. 安装依赖包（安装慢的话，下面 pip 命令后面加上 "-i https://pypi.tuna.tsinghua.edu.cn/simple/"）
+4. 
 
    ```bash
    pip install numpy
