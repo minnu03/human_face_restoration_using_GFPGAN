@@ -33,7 +33,6 @@
    pip install -r requirements.txt
    ```
 
-5. Refer readme.md in ex
 ## Download pre-trained weights
 
 - [GFPGANv1.3.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)
