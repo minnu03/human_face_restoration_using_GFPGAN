@@ -48,27 +48,15 @@ Place it in `experiments/pretrained_models` folder
 1. Host an http server
 
    ```bash
-   python -m http.server
+   python -m http.server 8000
    ```
-1. Run the webapp
+2. Run the webapp
 
    ```bash
-   python -m http.server
+   streamlit run frontend.py
    ```
-   
-   例如：
 
+For debugging:
    ```bash
    python video_rebuild/main.py --video ./video_rebuild/src/demo04.mp4 --save-path ./video_rebuild/result/output.mp4
    ```
-
-   - 如果需要保存每一帧的图像，可以在命令最后加上`--save-frame`，但是会使输出结果太大，不建议保存每一帧；
-
-   - 输出的结果存储在项目`video_rebuild/result`目录下。
-
-
-"""
- python -m http.server 8000
- streamlit run fe.py
-"""
-
